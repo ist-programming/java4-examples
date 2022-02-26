@@ -4,13 +4,6 @@ import java.util.Calendar;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-/**
- * 
- * Code for studying purposes. Programming course, 4th semestr.
- * Kazan Federal University, ITIS. http://study.istamendil.info/
- *
- * @author Alexander Ferenets (Istamendil) <ist.kazan@gmail.com>
- */
 public class JavaSimpleConfigTest {
 
   public static void main(String[] args) {

@@ -1,6 +1,8 @@
 package ru.kpfu.springcontrollers.controllers;
 
 import java.io.IOException;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,10 +13,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import ru.kpfu.springcontrollers.services.MessageService;
 
 @Controller
 @RequestMapping("/tests")
 public class DefaultController {
+
+  @Autowired
+  private MessageService messageService;
 
   @RequestMapping
   public String index(ModelMap map) {
@@ -24,7 +30,7 @@ public class DefaultController {
   
   @RequestMapping("/s")
   public String simple(ModelMap map) {
-    map.put("viewVariable", "Just simple action");
+    map.put("viewVariable", messageService.getMessage());
     return "tests";
   }
   
