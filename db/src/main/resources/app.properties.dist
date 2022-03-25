@@ -1,0 +1,14 @@
+db.user=root
+db.password=
+db.uri=jdbc:mysql://localhost:3306/test
+db.driver=com.mysql.cj.jdbc.Driver
+
+#Hibernate Configuration:
+hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.show_sql=true
+hibernate.hbm2ddl.auto =update
+hibernate.enable_lazy_load_no_trans=true
+# Hibernate tries to use @Generated value of type table what is wrong
+# https://vladmihalcea.com/why-should-not-use-the-auto-jpa-generationtype-with-mysql-and-hibernate/
+# https://hibernate.atlassian.net/browse/HHH-11014
+hibernate.id.new_generator_mappings=true
