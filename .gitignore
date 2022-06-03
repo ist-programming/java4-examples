@@ -30,3 +30,8 @@ vendor/
 
 # Property files
 *.properties
+
+#Idea
+.idea
+*.iml
+
