@@ -1,0 +1,15 @@
+### Get books list
+GET http://localhost:8080/
+
+
+### Send new book with valid ISBN
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+isbn=155999999995&name=New book&pages=356
+
+### Send new book with bad ISBN
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+isbn=1&name=New book&pages=356
