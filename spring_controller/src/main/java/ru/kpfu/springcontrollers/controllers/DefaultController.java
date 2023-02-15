@@ -19,8 +19,12 @@ import ru.kpfu.springcontrollers.services.MessageService;
 @RequestMapping("/tests")
 public class DefaultController {
 
+  private final MessageService messageService;
+
   @Autowired
-  private MessageService messageService;
+  public DefaultController(MessageService messageService) {
+    this.messageService = messageService;
+  }
 
   @RequestMapping
   public String index(ModelMap map) {

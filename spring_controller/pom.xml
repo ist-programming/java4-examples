@@ -23,10 +23,10 @@
         <java.web.api.version>8.0</java.web.api.version>
 
         <!-- Spring -->
-        <spring.version>5.1.4.RELEASE</spring.version>
+        <spring.version>5.3.16</spring.version>
 
         <!-- Other stuff dependencies -->
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.11.2</jackson.version>
     </properties>
 
     <dependencies>
@@ -82,4 +82,19 @@
         </dependency>
     </dependencies>
 
+    <!-- Fix for correct war packaging. Can be removed for some environments. -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
