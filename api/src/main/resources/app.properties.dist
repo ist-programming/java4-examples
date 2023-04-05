@@ -1,0 +1,9 @@
+#Spring properties
+# To-do: Do we need this with current configurations?
+spring.main.allow-bean-definition-overriding=true
+
+server.port = 8080
+server.ssl.enable = false
+
+springdoc.api-docs.path=/api-docs
+springdoc.swagger-ui.path=/swagger-ui.html

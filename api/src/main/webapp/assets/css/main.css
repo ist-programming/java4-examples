@@ -1,0 +1,80 @@
+/* BASE ELEMENTS */
+form{
+    width:500px;
+}
+
+/* SITE ELEMENTS */
+
+/* List of books */
+.books-list{
+    margin:0px 50px;
+}
+.books-list .book-card{
+    margin:30px 0px;
+}
+.books-list .book-description{
+    text-indent:30px;
+}
+.books-list .book-header a{
+    color:#000;
+}
+.books-list .book-header a:hover{
+    text-decoration:underline;
+}
+.books-list .book-header .book-info{
+    color:#999;
+}
+.books-list .book-header .book-action-icon{
+    float:right;
+    font-size:1.2em;
+    font-weight:bold;
+    margin:0px 5px;
+}
+.books-list .book-header .book-name{
+    display:inline-block;
+    font-style: italic;
+    margin:0px;
+}
+.books-list .book-header .book-name:first-letter{
+    color: #933;
+    font-size:1.5em;
+}
+.books-list .book-header .book-url{
+    margin-left:5px;
+    margin-right:10px;
+}
+
+/* Standalone book page */
+.book-page{
+    font-size:1.8em;
+    margin:0px 50px;
+}
+.book-page .book-card{
+    margin:5px 0px;
+}
+.book-page .book-description{
+    text-indent:30px;
+}
+.book-page .book-field{
+    font-size:0.7em;
+}
+.book-page .book-field .field-name{
+    font-weight:bold;
+}
+.book-page .book-field .field-value{}
+.book-page .book-header .book-name{
+    float:left;
+    font-style: italic;
+}
+.book-page .book-header .book-name:first-letter{
+    color: #993333;
+    font-size:1.5em;
+}
+
+.global-message{
+    font-size:1.4em;
+    font-weight:bold;
+}
+.template-block{
+    display:none;
+}

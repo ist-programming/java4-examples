@@ -1,0 +1,32 @@
+### Get list of books
+GET http://{{host}}:{{port}}/{{apiPath}}/book
+
+### Get Book details
+GET http://{{host}}:{{port}}/{{apiPath}}/book/1
+
+### Not found
+GET http://{{host}}:{{port}}/{{apiPath}}/book/435783478
+
+### Bad create request
+POST http://{{host}}:{{port}}/{{apiPath}}/book
+Content-Type: application/json
+
+{
+  "name": "Another book",
+  "description": "Some description",
+  "pages": -1
+}
+
+### Good create request
+POST http://{{host}}:{{port}}/{{apiPath}}/book
+Content-Type: application/json
+
+{
+  "name": "Another book",
+  "description": "Some description",
+  "isbn": "0123456789012",
+  "pages": 1324
+}
+
+### Delete first book
+DELETE http://{{host}}:{{port}}/{{apiPath}}/book/1
