@@ -7,3 +7,6 @@ server.ssl.enable = false
 
 springdoc.api-docs.path=/api-docs
 springdoc.swagger-ui.path=/swagger-ui.html
+
+#Additional properties
+cors.hosts = http://localhost:3000

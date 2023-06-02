@@ -27,6 +27,7 @@ import java.util.stream.StreamSupport;
 
 @Controller
 @RestController
+@CrossOrigin("${cors.hosts}")
 @RequestMapping("/api/v1/book")
 @Tag(name = "Book Simple CRUD")
 public class BookRestController {
