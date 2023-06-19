@@ -15,8 +15,6 @@ async function addBook(book){
         }
     });
     block.classList.remove('template-block');
-    console.log(block);
-    console.log(bookListBlock);
     bookListBlock.append(block);
 }
 
